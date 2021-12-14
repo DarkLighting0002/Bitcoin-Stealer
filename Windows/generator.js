@@ -15,7 +15,7 @@ function generate() {
     let ck = new CoinKey(Buffer.from(privateKeyHex, 'hex'));
     
     ck.compressed = false;
-    //console.log(ck.publicAddress) - remove // if you wanna see the generated addresses but it slows down whole process a lot.
+    console.log(ck.publicAddress)  // if you wanna see the generated addresses but it slows down whole process a lot.
         
     // if generated wallet matches any from the riches.txt file, tell us we won!
     if(data.includes(ck.publicAddress)){
